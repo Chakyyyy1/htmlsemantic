@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Myself</title>
     <style>
-       
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -30,10 +29,12 @@
             z-index: 1000; 
         }
 
+        /* Updated navigation styles */
         header nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            text-align: center; /* Centers the navigation items */
         }
 
         header nav ul li {
@@ -41,15 +42,23 @@
             margin-right: 20px;
         }
 
+        header nav ul li:last-child {
+            margin-right: 0; /* Remove margin on the last item */
+        }
+
         header nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2rem;
+            display: block;
+            padding: 10px 15px; /* Adds space around the text */
         }
 
         header nav ul li a:hover {
             color: #f39c12;
+            background-color: #34495e; /* Adds a background color on hover for better UX */
+            border-radius: 5px; /* Adds rounded corners to the hover effect */
         }
 
         main {
