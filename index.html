@@ -29,12 +29,11 @@
             z-index: 1000; 
         }
 
-        /* Updated navigation styles */
         header nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: center; /* Centers the navigation items */
+            text-align: center; 
         }
 
         header nav ul li {
@@ -43,7 +42,7 @@
         }
 
         header nav ul li:last-child {
-            margin-right: 0; /* Remove margin on the last item */
+            margin-right: 0; 
         }
 
         header nav ul li a {
@@ -52,19 +51,19 @@
             font-weight: bold;
             font-size: 1.2rem;
             display: block;
-            padding: 10px 15px; /* Adds space around the text */
+            padding: 10px 15px; 
         }
 
         header nav ul li a:hover {
             color: #f39c12;
-            background-color: #34495e; /* Adds a background color on hover for better UX */
-            border-radius: 5px; /* Adds rounded corners to the hover effect */
+            background-color: #34495e; 
+            border-radius: 5px; 
         }
 
         main {
             padding: 20px;
             background-color: #fff;
-            margin-top: 20px; /* Ensures content starts below the fixed header */
+            margin-top: 20px; 
         }
 
         article {
@@ -126,6 +125,32 @@
             border: 1px solid #e1e1e1;
             margin-top: 30px;
             margin-bottom: 30px;
+        }
+
+        /* Centering content for My Favorites */
+        #favorites .section-description, 
+        #favorites h3, 
+        #favorites figure {
+            text-align: center;
+        }
+
+        /* Centering images in My Favorites */
+        #favorites figure img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Centering content for Friends */
+        #friends .section-description, 
+        #friends h3, 
+        #friends figure {
+            text-align: center;
+        }
+
+        /* Centering images in Friends */
+        #friends figure img {
+            margin: 0 auto;
+            display: block;
         }
     </style>
 </head>
@@ -202,8 +227,9 @@
 
         <article id="friends" class="content-section">
             <h2 class="section-header">CHARLES AND FRIENDS</h2>
-            <h3>College Friends</h3>
+            <h3>College Friends</h3>       
             <figure>
+                <hr>
                 <img src="college friends.jpg" alt="College Friends">
                 <footer>
                     <p>"Friends you make in college are the ones who will help shape your future and who will always have your back, no matter the distance."</p>
@@ -218,7 +244,6 @@
 
     <footer>
         <p>All Rights Reserved &copy; Charles Life</p>
-        <a href="#top">Back to Top</a>
     </footer>
 </body>
 </html>
